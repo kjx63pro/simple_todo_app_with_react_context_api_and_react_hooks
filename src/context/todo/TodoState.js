@@ -15,11 +15,19 @@ const TodoState = (props) => {
     dispatch({ type: ADD_TODO, payload: newTodo });
   };
 
+  const deleteTodo = (id) => {
+    dispatch({
+      type: DELETE_TODO,
+      payload: id,
+    });
+  };
+
   return (
     <TodoContext.Provider
       value={{
         todos: state.todos,
         addTodo,
+        deleteTodo,
       }}
     >
       {props.children}

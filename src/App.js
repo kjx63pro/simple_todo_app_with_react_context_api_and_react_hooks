@@ -6,12 +6,6 @@ import AddForm from './components/AddForm';
 import TodoState from './context/todo/TodoState.js';
 
 function App() {
-  // const deleteTodo = (index) => {
-  //   const newTodos = [...todos];
-  //   newTodos.splice(index, 1);
-  //   setTodos(newTodos);
-  // };
-
   // const completeTodo = (index) => {
   //   const newTodos = [...todos];
   //   newTodos[index].isCompleted = !newTodos[index].isCompleted;

@@ -4,11 +4,11 @@ import TodoContext from '../context/todo/TodoContex';
 
 import { Button } from '@material-ui/core';
 
-const Todo = ({ deleteTodo, completeTodo }) => {
+const Todo = ({ completeTodo }) => {
   const todoContext = useContext(TodoContext);
   return (
     <div className='todo'>
-      {todoContext.todos.length === 0 ? (
+      {todoContext.todos?.length === 0 ? (
         <div className='todo__whenNothingtoList'>
           <p>
             There is no Todo at the moment.
@@ -18,7 +18,7 @@ const Todo = ({ deleteTodo, completeTodo }) => {
         </div>
       ) : (
         <div>
-          {todoContext.todos.map((todo, index) => (
+          {todoContext.todos?.map((todo, index) => (
             <div className='todo__list' key={index}>
               <p
                 className={todo.isCompleted ? 'todo__isCompleted' : ''}
@@ -30,7 +30,7 @@ const Todo = ({ deleteTodo, completeTodo }) => {
               </p>
               <div className='todo__button'>
                 <Button
-                  onClick={() => deleteTodo(index)}
+                  onClick={() => todoContext.deleteTodo(index)}
                   variant='contained'
                   color='secondary'
                 >
