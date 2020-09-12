@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import './AddForm.css';
+
+import TodoContext from '../context/todo/TodoContex';
 
 import { Button } from '@material-ui/core';
 
-const AddForm = ({ addTodo }) => {
+const AddForm = () => {
+  const todoContext = useContext(TodoContext);
+
   const [value, setValue] = useState('');
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!value) return;
-    addTodo(value);
+    todoContext.addTodo(value);
     setValue('');
   };
 

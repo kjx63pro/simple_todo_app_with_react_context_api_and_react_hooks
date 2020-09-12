@@ -11,10 +11,15 @@ const TodoState = (props) => {
 
   const [state, dispatch] = useReducer(todoReducer, initialState);
 
+  const addTodo = (newTodo) => {
+    dispatch({ type: ADD_TODO, payload: newTodo });
+  };
+
   return (
     <TodoContext.Provider
       value={{
         todos: state.todos,
+        addTodo,
       }}
     >
       {props.children}

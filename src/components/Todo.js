@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Todo.css';
+import TodoContext from '../context/todo/TodoContex';
 
 import { Button } from '@material-ui/core';
 
-const Todo = ({ todos, deleteTodo, completeTodo }) => {
+const Todo = ({ deleteTodo, completeTodo }) => {
+  const todoContext = useContext(TodoContext);
   return (
     <div className='todo'>
-      {todos.length === 0 ? (
+      {todoContext.todos.length === 0 ? (
         <div className='todo__whenNothingtoList'>
           <p>
             There is no Todo at the moment.
@@ -16,7 +18,7 @@ const Todo = ({ todos, deleteTodo, completeTodo }) => {
         </div>
       ) : (
         <div>
-          {todos.map((todo, index) => (
+          {todoContext.todos.map((todo, index) => (
             <div className='todo__list' key={index}>
               <p
                 className={todo.isCompleted ? 'todo__isCompleted' : ''}
