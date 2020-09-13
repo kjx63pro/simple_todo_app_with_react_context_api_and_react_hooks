@@ -1,11 +1,8 @@
-# Simple Todo App with React Hooks
+# Simple Todo App with React (Built with Context API and React Hooks)
 
-This app is a very simple todo app with React.js for UI.
-The useState is used for state management in App-level-state-managemnet.
+This app is a very simple todo app with React.js.
 
-## Live Demo
-
-Use the app online at [https://simple-todo-with-react.web.app/](https://simple-todo-with-react.web.app/)
+The Context API and useReducer are used for state management.
 
 ## Quick Start
 
@@ -21,19 +18,14 @@ $ npm run start
 
 ## Some of the screen shots of this app
 
-###
-
-- Landing Page
-  <img src="https://user-images.githubusercontent.com/70613146/92351110-c16d6280-f115-11ea-88b7-be8111342dd3.png" width="400"/>
-
-- Add Todo, Delete Todo and Complete Todo Functionality
-  <img src="https://user-images.githubusercontent.com/70613146/92351537-edd5ae80-f116-11ea-975b-9eb7fd5dd8d0.png" width="400" />
+<img src="https://user-images.githubusercontent.com/43631528/93017382-2d166a80-f603-11ea-864d-3418223b479f.png" width="400"/>
+<img src="https://user-images.githubusercontent.com/43631528/93017380-2b4ca700-f603-11ea-81a7-cf377eb02c61.png" width="400"/>
 
 ## Technologies Used
 
 - Frontend
   - React.js
-    - functional based component with hooks(useState)
+    - Context API and useReducer for State management
   - Material UI
 - Deployment to Firebase
 
@@ -45,7 +37,7 @@ $ npm run start
 
 ## Who this app is for
 
-For anyone who has a basic knowledge of React and want to learn React Hooks for the first time
+For anyone who has a basic knowledge of React and want to learn React Context API for the first time
 
 ## Newt Todo
 
