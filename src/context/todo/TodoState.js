@@ -22,12 +22,20 @@ const TodoState = (props) => {
     });
   };
 
+  const completeTodo = (id) => {
+    dispatch({
+      type: COMPLETE_TODO,
+      payload: id,
+    });
+  };
+
   return (
     <TodoContext.Provider
       value={{
         todos: state.todos,
         addTodo,
         deleteTodo,
+        completeTodo,
       }}
     >
       {props.children}

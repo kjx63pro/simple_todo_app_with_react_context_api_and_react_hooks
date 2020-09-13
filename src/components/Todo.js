@@ -4,7 +4,7 @@ import TodoContext from '../context/todo/TodoContex';
 
 import { Button } from '@material-ui/core';
 
-const Todo = ({ completeTodo }) => {
+const Todo = () => {
   const todoContext = useContext(TodoContext);
   return (
     <div className='todo'>
@@ -23,7 +23,7 @@ const Todo = ({ completeTodo }) => {
               <p
                 className={todo.isCompleted ? 'todo__isCompleted' : ''}
                 onClick={() => {
-                  completeTodo(index);
+                  todoContext.completeTodo(index);
                 }}
               >
                 {todo.text}
