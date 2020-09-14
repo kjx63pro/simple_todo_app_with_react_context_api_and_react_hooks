@@ -4,6 +4,8 @@ This app is a very simple todo app with React.js.
 
 The Context API and useReducer are used for state management.
 
+(The original version (app-level state management) can be found in [Simple Todo App with React hooks](https://github.com/kjx63pro/simple_todo_app_with_react_hooks))
+
 ## Quick Start
 
 ```
@@ -18,8 +20,8 @@ $ npm run start
 
 ## Some of the screen shots of this app
 
-<img src="https://user-images.githubusercontent.com/43631528/93017382-2d166a80-f603-11ea-864d-3418223b479f.png" width="400"/>
-<img src="https://user-images.githubusercontent.com/43631528/93017380-2b4ca700-f603-11ea-81a7-cf377eb02c61.png" width="400"/>
+<img src="https://user-images.githubusercontent.com/70613146/93070176-7e813100-f6b9-11ea-9d4a-42ecaf78cd48.png" width="400"/>
+<img src="https://user-images.githubusercontent.com/70613146/93070183-7fb25e00-f6b9-11ea-8077-558cfd637686.png" width="400"/>
 
 ## Technologies Used
 
@@ -27,13 +29,15 @@ $ npm run start
   - React.js
     - Context API and useReducer for State management
   - Material UI
-- Deployment to Firebase
+  - React Bootstrap ⭐️
+    - Navbar
 
 ## Functions
 
 - Add Todo
 - Delete Todo
 - Complete Todo (Line-through)
+- ⭐️ Navigation to Browse different routes
 
 ## Who this app is for
 
