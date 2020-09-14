@@ -1,19 +1,16 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import Todo from './components/Todo';
 import AddForm from './components/AddForm';
 
 import TodoState from './context/todo/TodoState.js';
+import AppNavbar from './components/Navbar/AppNavbar';
 
 function App() {
-  // const completeTodo = (index) => {
-  //   const newTodos = [...todos];
-  //   newTodos[index].isCompleted = !newTodos[index].isCompleted;
-  //   setTodos(newTodos);
-  // };
-
   return (
     <TodoState>
+      <AppNavbar />
       <div className='app'>
         <h2>
           Simple Todo App with React Hooks{' '}
